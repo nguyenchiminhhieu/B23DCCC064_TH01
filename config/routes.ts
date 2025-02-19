@@ -50,7 +50,24 @@
 	// 		},
 	// 	],
 	// },
-
+	{
+		path: '/todo-list',
+		name: 'TodoList',
+		component: './TodoList',
+		icon: 'CheckSquareOutlined',
+	  },
+	  {
+		path: '/game-1',  
+		name: 'Game1',
+		component: './Game1',
+		icon: 'PlayCircleOutlined',  
+	},
+	{
+		path: '/game-2',  
+		name: 'Game2',
+		component: './Game2',
+		icon: 'PlayCircleOutlined',  
+	},
 	{
 		path: '/notification',
 		routes: [

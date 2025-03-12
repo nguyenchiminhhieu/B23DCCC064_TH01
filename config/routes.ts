@@ -69,6 +69,46 @@
 		icon: 'PlayCircleOutlined',  
 	},
 	{
+		path: '/Oantuti',  
+		name: 'Game Oẳn Tù Tì',
+		component: './Oantuti',
+		icon: 'PlayCircleOutlined',  
+	},
+	{
+		path: '/question-bank',
+		name: 'Ngân Hàng Câu Hỏi',
+		icon: 'QuestionCircleOutlined', 
+		routes: [
+		  {
+			path: '/question-bank',
+			name: 'Tổng Quan',
+		  },
+		  {
+			path: '/question-bank/subjects',
+			name: 'Quản Lý Môn Học',
+		  },
+		  {
+			path: '/question-bank/questions',
+			name: 'Ngân Hàng Câu Hỏi',
+		  },
+		  {
+			path: '/question-bank/questions/search',
+			name: 'Tìm Kiếm Câu Hỏi',
+			
+		  },
+		  {
+			path: '/question-bank/exams',
+			name: 'Quản Lý Đề Thi',
+		  },
+		],
+	  },
+	  {
+		path: '/QuanLyLichHen',  
+		name: 'Quản Lý Lịch Hẹn',
+		icon: 'CalendarOutlined',
+		component: './QuanLyLichHen', 
+	},
+	{
 		path: '/notification',
 		routes: [
 			{

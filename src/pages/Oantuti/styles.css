@@ -1,0 +1,176 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .game-card,
+  .history-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+  }
+  
+  .card-description {
+    color: #666;
+    margin: 0;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .players-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .player-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .choice-display {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .choice-icon {
+    font-size: 2.5rem;
+  }
+  
+  .result-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .result-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .result-win {
+    color: #10b981;
+  }
+  
+  .result-lose {
+    color: #ef4444;
+  }
+  
+  .result-draw {
+    color: #f59e0b;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+  }
+  
+  .choice-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 100px;
+  }
+  
+  .choice-button:hover {
+    background-color: #f9fafb;
+    border-color: #ccc;
+  }
+  
+  .choice-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .button-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-history {
+    text-align: center;
+    color: #666;
+  }
+  
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .history-match {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .history-number {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .history-choices {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 640px) {
+    .players-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .choice-button {
+      min-width: 80px;
+    }
+  }
